@@ -1,2 +1,5 @@
 # cms-performance-test-kit-guide
-a guide for CMS performance testing kit
+This document provide you a guidance of running performance benchmark testing for HP CMS products.
+
+HP LoadRunner,an industry standard performance testing tool, is needed for the peformance benchmark tests.
+
