@@ -31,14 +31,46 @@ We need to create theTQL and Enrichment in UCMDB server for the test. Go to the 
 
 ![](import_tql_enrichment.png)
 
-
+Select the file "system-test-enrichments-tqls.zip" under the "package" folder of CMS performance kit.
 
 
 ### Data Population
 
 In order to run the performacne test, we need to parepare the testing data for the test.
 
-Open the LoadRunner Script under "population" folder. Open the "population" in LoadRunner vUgen.
+Open the LoadRunner Script under "population" folder. Open the "population_script.usr" in LoadRunner vUgen.
+
+In LoadRunner Virtual User Generator, go to "Replay" -> "Run-Time Settings"
+
+![](population_settings.png)
+
+* ServerName
+* INI
+* StartIP
+* CIsToAdd
+* CIsTomarkForTQL
+* MarkInterval
+* MaskStartVal
+
+
+### JVM Settings
+add the following jars into the classpath
+* jar1
+* jar2
+* jar3
+* jar4
+*
+
+### Populate the testing data
+Click the Run button to execute the test
+
+![](population_run.png)
+
+
+
+
+
+
 
 
 

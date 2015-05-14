@@ -17,12 +17,12 @@ You can download the performance test kit as a zip code from the following link.
 
 
 After you unzip the download file, here the description for the file structure
-* script -
-* package -
-* xml -
-* ini -
-* population -
-* cms-testing-scenario.lr
+* script - contains all the LoadRunner test scripts
+* package - contains the UCMDB packge for TQL and enrichment for the test
+* xml - contains the configuration for performance testing scenario
+* ini - contains the configuration for performance testing data
+* population - contains the script for data population
+* cms-testing-scenario.lrs - This is the LoadRunner performance test scenario
 
 
 

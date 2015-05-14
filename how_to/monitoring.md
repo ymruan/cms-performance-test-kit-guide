@@ -1,1 +1,1 @@
-# How to install
+# How to add performance counter
