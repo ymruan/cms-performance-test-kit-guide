@@ -14,6 +14,7 @@ In this guide, we will show you
 # How to get the CMS performance test kit
 You can download the performance test kit as a zip code from the following link.
 
+[https://github.com/ymruan/cms-performance-test-kit-guide/blob/master/download/performance-test-kit.zip](https://github.com/ymruan/cms-performance-test-kit-guide/blob/master/download/performance-test-kit.zip)
 
 
 After you unzip the download file, here the description for the file structure
