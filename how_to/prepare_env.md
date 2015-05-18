@@ -11,7 +11,7 @@ Since the LoadRunner 11.52 use the "Java Protocal", so you have to install the J
 If you use the rest of JDK versions, it might ran into some issue.
 
 
-# Testing environment hardware recommendation
+# Hardware recommendation for test environment
 Here is the UCMDB hardware recommendation for enterprise deployment
 
 | Usage | CPU | RAM | Storage(free space)|
@@ -23,16 +23,15 @@ Here is the UCMDB hardware recommendation for enterprise deployment
 
 
 
-# How to prepare the testing data for performance test
+# How to prepare the testing data
 ### Deploy the package in UCMDB
 
-We need to create theTQL and Enrichment in UCMDB server for the test. Go to the UCMDB admin UI, goto
+We need to create the TQL and Enrichment in UCMDB server for the performance test.
+1. Go to the UCMDB admin UI, goto
 **Managers->Administration->Package Manager > Deploy package to Server**
-
 ![](import_tql_enrichment.png)
 
-Select the file "system-test-enrichments-tqls.zip" under the "package" folder of CMS performance kit.
-
+2. Select the file "system-test-enrichments-tqls.zip" under the "package" folder of CMS performance kit.
 
 ### Data Population
 
@@ -44,25 +43,20 @@ In LoadRunner Virtual User Generator, go to "Replay" -> "Run-Time Settings"
 
 ![](population_settings.png)
 
-* ServerName
-* INI
-* StartIP
-* CIsToAdd
-* CIsTomarkForTQL
-* MarkInterval
-* MaskStartVal
+1. Change value of "CIsToAdd". For example, we can use "14000000" to populat 14M CIs + relationships
+2. Change the value "ini". Use the file under "pupulation/ini"
 
 
-### JVM Settings
-add the following jars into the classpath
-* jar1
-* jar2
-* jar3
-* jar4
-*
+
+### JVM Settings for loadRunner
+In the Run-time Setting" pannel, clienck the "Classpath" to add the following jars into the classpath
+* jar/pcoe/DataTool
+* jar/pcoe/PcoeUtils.jar
+* jar/ucmdb/api-interfaces.jar
+* jar/ucmdb/ucmdb-api.jar
 
 ### Populate the testing data
-Click the Run button to execute the test
+In the LoadRunner VUGen, Click the "Reply" button to execute the test
 
 ![](population_run.png)
 
