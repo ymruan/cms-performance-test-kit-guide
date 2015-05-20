@@ -11,7 +11,7 @@ Since the LoadRunner 11.52 use the "Java Protocal", so you have to install the J
 If you use the rest of JDK versions, it might ran into some issue.
 
 
-# Hardware recommendation for test environment
+# Hardware recommendation for CMS test environment
 Here is the UCMDB hardware recommendation for enterprise deployment
 
 | Usage | CPU | RAM | Storage(free space)|
@@ -33,9 +33,9 @@ We need to create the TQL and Enrichment in UCMDB server for the performance tes
 
 2. Select the file "system-test-enrichments-tqls.zip" under the "package" folder of CMS performance kit.
 
-### Data Population
+### Prepare the testing data (Population)
 
-In order to run the performacne test, we need to parepare the testing data for the test.
+In order to run the performacne tests, we need to parepare the testing data for the test.
 
 Open the LoadRunner Script under "population" folder. Open the "population_script.usr" in LoadRunner vUgen.
 
@@ -45,6 +45,8 @@ In LoadRunner Virtual User Generator, go to "Replay" -> "Run-Time Settings"
 
 1. Change value of "CIsToAdd". For example, we can use "14000000" to populat 14M CIs + relationships
 2. Change the value "ini". Use the file under "pupulation/ini"
+
+If you want to know about the population data, please check the Chapter - [Population](../description/population_description.md)
 
 
 
