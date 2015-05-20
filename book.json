@@ -1,0 +1,15 @@
+{
+
+	"plugins": ["ga","disqus"],
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-XXXX-Y"
+        },
+        "disqus": {
+            "shortName": "cmsptk"
+        }
+
+    }
+
+}
+
